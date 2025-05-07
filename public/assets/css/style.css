@@ -1,0 +1,31 @@
+/* Memastikan html dan body mengambil seluruh tinggi layar */
+html, body {
+    height: 100%;
+}
+
+/* Menggunakan flexbox untuk body */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Konten utama mengambil ruang yang tersisa */
+.container {
+    flex: 1;
+}
+
+/* Footer selalu di bawah */
+footer {
+    margin-top: auto;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card-img-top {
+    width: 100%; /* Gambar akan mengikuti lebar card */
+    height: 200px; /* Tinggi gambar tetap */
+    object-fit: cover; /* Menjaga proporsi gambar agar tidak terdistorsi */
+}
