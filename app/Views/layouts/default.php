@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="<?= base_url('assets/vendor/bootstrap/css/bootstrap.min.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('assets/bootstrap/css/bootstrap.min.css') ?>">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
   <!-- Icon -->
@@ -25,7 +25,7 @@
   <?= $this->include('partials/footer') ?>
 
   <!-- Bootstrap JS Bundle (with Popper) -->
-  <script src="<?= base_url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+  <script src="<?= base_url('assets/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
   <!-- Custom JS -->
   <script src="<?= base_url('assets/js/script.js') ?>"></script>
   
