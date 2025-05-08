@@ -1,0 +1,18 @@
+<IfModule authz_core_module>
+    Require all denied
+</IfModule>
+
+<IfModule !authz_core_module>
+    Deny from all
+</IfModule>
+
+# Allow access to the uploads folder
+<Directory "/path/to/your/project/public/uploads">
+    <IfModule authz_core_module>
+        Require all granted
+    </IfModule>
+
+    <IfModule !authz_core_module>
+        Allow from all
+    </IfModule>
+</Directory>
