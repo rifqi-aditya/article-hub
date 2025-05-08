@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title><?= esc($title ?? 'My App') ?></title>
+  <title><?= esc($title ?? 'Article Hub') ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
@@ -12,23 +12,21 @@
   <!-- Icon -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-<body>
+  <body>
 
-  <?= $this->include('partials/navbar') ?>
+    <?= $this->include('partials/navbar') ?>
 
-  <!-- Konten utama -->
-  <div class="container mt-4">
-    <?= $this->renderSection('content') ?>
-  </div>
+    <!-- Konten utama -->
+    <div class="container mt-4">
+      <?= $this->renderSection('content') ?>
+    </div>
 
-  <!-- Footer -->
-  <?= $this->include('partials/footer') ?>
+    <!-- Footer -->
+    <?= $this->include('partials/footer') ?>
 
-  <!-- Bootstrap JS Bundle (with Popper) -->
-  <script src="<?= base_url('assets/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
-  <!-- Custom JS -->
-  <script src="<?= base_url('assets/js/script.js') ?>"></script>
-  
-
-</body>
+    <!-- Bootstrap JS Bundle (with Popper) -->
+    <script src="<?= base_url('assets/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+    <!-- Custom JS -->
+    <script src="<?= base_url('assets/js/script.js') ?>"></script>
+  </body>
 </html>

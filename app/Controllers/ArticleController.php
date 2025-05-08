@@ -173,5 +173,4 @@ class ArticleController extends BaseController
         // Redirect ke halaman utama atau daftar artikel setelah berhasil menghapus
         return redirect()->to(base_url('/'));
     }
-
 }
